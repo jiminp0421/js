@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/js/assets/js/math.js"></script>
+</head>
+<body>
+
+	<h1>계산기</h1>
+	
+	<input id="left" type="text" value=""> +
+	<input id="right" type="text" value=""> =
+	<input id="sum" type="text" value=""> 
+	<button id="btnCal">계산하기</button>
+
+</body>
+
+<script type="text/javascript">
+
+	var sum = plus(5, 5);
+	console.log(sum);
+
+</script>
+
+<script type="text/javascript">
+	window.onload = function() {
+	
+		var btnPlus = document.getElementById("btnCal");
+		
+		btnPlus.onclick = function(){
+			console.log("플러스버튼 클릭");
+			
+			//left value값 읽기
+			//right value값 읽기
+			//left + right
+			//sum left+right
+			
+			var left = document.getElementById("left");
+			//console.log(left);
+			var leftValue = left.value;
+			console.log(leftValue);
+			
+			var right = document.getElementById("right");
+			//console.log(right);
+			var rightValue = right.value;
+			console.log(rightValue);
+			
+			var sum = document.getElementById("sum");
+			//console.log(sum);
+			//sum.value = leftValue + rightValue;
+			//console.log(sum); //45가 나왔다 leftValue와 rightValue가 string이라서.
+			//console.log(typeof leftValue);
+			sum.value = parseInt(leftValue) + parseInt(rightValue);
+			
+			//이벤트 잡아오기
+			//html 이름정해주고 버튼정해주고
+			//값 만들어주기
+			
+			
+			
+			
+		};
+		
+	};
+
+
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>함수</h1>
+
+
+</body>
+<script type="text/javascript">
+	
+	//함수정의 부분이 가장먼저 해석된다
+	console.log("===기명함수===");
+	testA();
+	
+	//기명함수, 선언적함수, 이름있는함수 -->정의
+	function testA(){
+		console.log("기명함수 실행");
+	}
+	
+	
+	testA();
+	
+	//순서대로 해석된다
+	console.log("===익명함수===");
+	
+	var testB = function (){
+		console.log("익명함수 실행");
+	}
+	
+	testB();
+	console.log(typeof testB);
+	
+</script>
+</html>

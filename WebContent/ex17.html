@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ 
+	<button id="btn">js테스트버튼</button>
+	<h1 id="display">이름출력영역</h1>
+
+
+</body>
+
+<script type="text/javascript">
+	window.onload = function() {
+		
+		var testButton = document.getElementById("btn"); //1
+		var testArea = document.getElementById("display");
+		console.log(testButton); //1들어갔는지 확인
+		console.log(testArea);
+		
+		
+		testButton.onclick = function(){ 
+			console.log("버튼클릭"); //2
+			testArea.innerHTML = "<font color='red'>홍길동</font>";
+		
+		};
+	};
+
+
+
+</script>
+
+
+</html>
